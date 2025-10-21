@@ -1,70 +1,145 @@
-# React.js and Tailwind CSS Assignment
+# 🌙 PLP Task Manager — React + Vite + Tailwind CSS
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+This project is part of the **MERN Front-End Development Assignment** focusing on mastering **React, JSX, CSS, and Tailwind**.  
+It demonstrates component reusability, state management using React hooks, API integration, and a dynamic **light/dark mode** using React Context.
 
-## Assignment Overview
+---
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+## 🚀 Features
 
-## Getting Started
+✅ Built with **React + Vite** for fast development  
+✅ Styled with **Tailwind CSS**  
+✅ Theme toggling using **Context API (Dark/Light Mode)**  
+✅ Task Manager with CRUD-like behavior (Add, Delete, Filter tasks)  
+✅ API integration using [JSONPlaceholder](https://jsonplaceholder.typicode.com)  
+✅ Reusable UI components: Button, Navbar, Footer  
+✅ Responsive and accessible design
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
+---
+
+## 🧠 Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| Frontend | React (Vite) |
+| Styling | Tailwind CSS |
+| State Management | React Hooks & Context API |
+| API | JSONPlaceholder (Fake API for demo) |
+| Tooling | ESLint, Vite |
+
+---
+
+## 🧩 Project Structure
+
+```
+vite-project/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Button.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── TaskManager.jsx
+│   ├── context/
+│   │   └── ThemeContext.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   └── App.css
+├── package.json
+├── vite.config.js
+└── tailwind.config.js
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the project**
+   ```bash
+   git clone <your-repo-link>
+   cd vite-project
    ```
+
+2. **Install dependencies**
+   ```bash
    npm install
    ```
-4. Start the development server:
-   ```
+
+3. **Run the development server**
+   ```bash
    npm run dev
    ```
 
-## Files Included
+4. Open your browser and navigate to  
+   👉 [http://localhost:5173](http://localhost:5173)
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+---
 
-## Requirements
+## 🌗 Dark & Light Mode
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+The app uses **React Context** to manage theme switching.  
+User preference is saved to `localStorage` and applied automatically on reload.
 
-## Project Structure
+---
 
+## 📝 API Integration
+
+Data is fetched from **JSONPlaceholder**:
 ```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+https://jsonplaceholder.typicode.com/todos?_limit=5
 ```
 
-## Submission
+Displayed as a task list under the “API Data” section.
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+## 🖼️ Screenshots
+![alt text](image.png)
 
-## Resources
+![alt text](image-1.png)
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+### 🪄 Dark Mode
+![Dark Mode Screenshot](./src/assets/159b0fe5-69fa-4dbe-9e26-e392283df109.png)
+
+*(If you also have a light mode screenshot, include it below:)*
+
+### ☀️ Light Mode
+![Light Mode Screenshot](./src/assets/light-mode.png)
+
+---
+
+## 🧰 Available Scripts
+
+| Command | Description |
+|----------|-------------|
+| `npm run dev` | Run the development server |
+| `npm run build` | Build the app for production |
+| `npm run preview` | Preview the production build |
+
+---
+Images
+
+---
+
+## 📚 Learning Outcomes
+
+Through this assignment, I learned to:
+- Use **Vite** for fast React setup
+- Create and reuse **modular React components**
+- Manage state using **React Hooks**
+- Implement **ThemeContext** for app-wide dark/light mode**
+- Fetch and render **external API data**
+- Style modern UI with **Tailwind CSS**
+
+---
+
+## 👨‍💻 Author
+
+**Name:** Simon Ruto  
+**Course:** PLP – Mastering Front-End Development (Week 3 Assignment)  
+**Tools:** React, Vite, Tailwind CSS, Context API
+
+---
+
+> _“Code is like humor. When you have to explain it, it’s bad.” – Cory House_

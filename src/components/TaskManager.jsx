@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from './Button';
+import Card from './Card';
 
 /**
  * Custom hook for managing tasks with localStorage persistence
@@ -113,6 +114,16 @@ const TaskManager = () => {
         >
           Completed
         </Button>
+        {/* Added this for the card component */}
+      </div>
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 mt-6">
+        {tasks.map((task) => (
+          <Card
+            key={task.id}
+            title={task.text}
+            description={task.completed ? "Completed" : "Active Task"}
+          />
+        ))}
       </div>
 
       {/* Task list */}
